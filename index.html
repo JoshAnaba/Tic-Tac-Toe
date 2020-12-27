@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+     
+        <h1 class="title">Noughts & Crosses (3x3)</h1>
+        <div class="game-container">
+            <div data-btn-index='0' class="btn"></div>
+            <div data-btn-index='1' class="btn"></div>
+            <div data-btn-index='2' class="btn"></div>
+            <div data-btn-index='3' class="btn"></div>
+            <div data-btn-index='4' class="btn"></div>
+            <div data-btn-index='5' class="btn"></div>
+            <div data-btn-index='6' class="btn"></div>
+            <div data-btn-index='7' class="btn"></div>
+            <div data-btn-index='8' class="btn"></div>
+        </div>
+        <h2 class="game-status"></h2>
+        <button class="game-continue">Restart</button><br>
+       
+    </section>
+    <div class="base">
+        <div id='player-div'>
+            <div id='playerX-div'>
+                <label for="playerX">PlayerX</label><br>
+                <input id='playerX' type="number" value ='0' disabled>
+            </div>
+            <div id='playerO-div'>
+                <label for="playerX">PlayerO</label><br>
+                <input id='playerO' type="number" value='0' disabled>
+            </div>
+        </div>
+        <button class="game-restart">Refresh game</button>
+    </div>
+  
+    <div class="audio">
+        <audio id="myAudio">
+            <source src="./applause4.mp3" type="audio/ogg">
+            <source src="./applause4.mp3" type="audio/mpeg"> 
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
